@@ -1,4 +1,4 @@
-#Intro[Custom object detection]
+# Intro[Custom object detection]
 To get started with working on OTS-retail project git clone or download the darflow repository first. [darkflow](https://github.com/thtrieu/darkflow.git)
 
 ---
@@ -6,7 +6,7 @@ To get started with working on OTS-retail project git clone or download the darf
 **Assuming that the installation steps from the darflow repository has been followed we now outline the various steps involved in this project.**
 
 ---
-- First step is to create a dataset--can use tools like labelImg,labelme...etc.I prefer labelImg! (Skip this if you already have a dataset and their annotations)
+- First step is to create a dataset--can use tools like labelImg,labelme...etc.I prefer labelImg! (Skip this if you already have a dataset and their annotations)call 
 
 - Second step is :
 
