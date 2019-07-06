@@ -25,8 +25,8 @@ To get started with working on OTS-retail project git clone or download the darf
      - Create a copy of the configuration file ```tiny-yolo-voc.cfg``` and rename it according to your preference.In my case          there is only one class so ```tiny-yolo-voc-1c.cfg``` (It is crucial that you leave the original ```tiny-yolo-     voc.cfg``` file unchanged.)
 
      - In ```tiny-yolo-voc-1c.cfg```, change classes in the [region] layer (the last layer) to the number of classes you are          going to train for (Line 120: classes=no of classes) 
-     ```...
-
+     ```
+        ...     
         [region]
         anchors = 1.08,1.19,  3.42,4.41,  6.63,11.38,  9.42,5.11,  16.62,10.52
         bias_match=1
@@ -34,14 +34,12 @@ To get started with working on OTS-retail project git clone or download the darf
         coords=4
         num=5
         softmax=1
-
         ...
     ```
     
      - In ```tiny-yolo-voc-1c.cfg```, change filters in the [convolutional] layer (the second to last layer)[Line:114] to num         *(classes + 5).In our case, num is 5 and classes are 3 so 5 * (1 + 5) = 30 therefore filters are set to 30.
      ```
         ...
-
         [convolutional]
         size=1
         stride=1
@@ -51,9 +49,20 @@ To get started with working on OTS-retail project git clone or download the darf
 
         [region]
         anchors = 1.08,1.19,  3.42,4.41,  6.63,11.38,  9.42,5.11,  16.62,10.52
-
         ...
-
-     
      ```
+     
      - Change labels.txt to include the label(s) you want to train on (number of labels should be the same as the number of          classes you set in tiny-yolo-voc-3c.cfg file). In our case, labels.txt will contain 3 labels.
+     ```
+       label1
+       label2
+       .
+       .
+       .
+     ```
+    
+    -Third step is:
+      ```
+      python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation                    /Path/to/annotations --dataset /Path/to/images --epoch 300 --summary /Path/to/store/logs/for/tensorboard/visualization.
+      
+      ```
