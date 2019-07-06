@@ -73,9 +73,9 @@ To get started with working on OTS-retail project git clone or download the darf
     tensorboard --logdir logstrain
     
     ```
-    - After the training has been completed you should see the trained file configurations with the name  ``` tiny-yolo-voc-     1c-14250.profile ``` which is can now be used for object detection.
+- After the training has been completed you should see the trained file configurations with the name  ``` tiny-yolo-voc-     1c-14250.profile ``` which is can now be used for object detection.
     
-    - From the repository in ```object_rec.py``` file configure the model trained and the checkpoint file.(Also configure the       path of the image on which you want the object detector to detect.
+- From the repository in ```object_rec.py``` file configure the model trained and the checkpoint file.(Also configure the       path of the image on which you want the object detector to detect.
     
     ```
     options = {
@@ -86,7 +86,7 @@ To get started with working on OTS-retail project git clone or download the darf
      }
      
      ```
-     - Finally execute :
+- Finally execute :
      ```
       
       python object_rec.py
