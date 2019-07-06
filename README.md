@@ -26,5 +26,5 @@ To get started with working on OTS-retail project git clone or download the darf
 
      - In ```tiny-yolo-voc-1c.cfg```, change classes in the [region] layer (the last layer) to the number of classes you are          going to train for (Line 120: classes=no of classes) 
 
-     - In tiny-yolo-voc-3c.cfg, change filters in the [convolutional] layer (the second to last layer)[Line:114] to num *            (classes + 5).        in our case, num is 5 and classes are 3 so 5 * (1 + 5) = 30 therefore filters are set to 30.
+     - In ```tiny-yolo-voc-1c.cfg```, change filters in the [convolutional] layer (the second to last layer)[Line:114] to num         *(classes + 5).In our case, num is 5 and classes are 3 so 5 * (1 + 5) = 30 therefore filters are set to 30.
       
