@@ -64,7 +64,7 @@ To get started with working on OTS-retail project git clone or download the darf
     - Third step is(execute in the terminal the following command to start training):
     
       ```
-        python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation                       /Path/to/annotations --dataset /Path/to/images --epoch 100 --summary /Path/to/store/logs/for/tensorboard/visualization.
+      python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation /Path/to/annotations --dataset /Path/to/images --epoch 100 --summary /Path/to/store/logs/for/tensorboard/visualization.
       ```
 
     - To visualize the training in the tensorboard:
