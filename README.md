@@ -86,5 +86,10 @@ To get started with working on OTS-retail project git clone or download the darf
      }
      
      ```
-     
+     - Finally execute :
+     ```
+      
+      python object_rec.py
+      
+     ```
      
