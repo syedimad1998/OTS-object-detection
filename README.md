@@ -61,16 +61,30 @@ To get started with working on OTS-retail project git clone or download the darf
        .
      ```
     
-    -Third step is(execute in the terminal the following command to start training):
+    - Third step is(execute in the terminal the following command to start training):
     
       ```
-        python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation                       /Path/to/annotations --dataset /Path/to/images --epoch 300 --summary /Path/to/store/logs/for/tensorboard/visualization.
+        python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation                       /Path/to/annotations --dataset /Path/to/images --epoch 100 --summary /Path/to/store/logs/for/tensorboard/visualization.
       ```
 
-    -To visualize the training in the tensorboard:
+    - To visualize the training in the tensorboard:
     
     ```
     tensorboard --logdir logstrain
     
     ```
+    - After the training has been completed you should see the trained file configurations with the name  ``` tiny-yolo-voc-     1c-14250.profile ``` which is can now be used for object detection.
     
+    - From the repository in ```object_rec.py``` file configure the model trained and the checkpoint file.(Also configure the       path of the image on which you want the object detector to detect.
+    
+    ```
+    options = {
+    'model': 'cfg/tiny-yolo-voc-1c.cfg',
+    'load': 14250,
+    'threshold': 0.25,
+    'gpu': 1.0(if using a gpu)
+     }
+     
+     ```
+     
+     
