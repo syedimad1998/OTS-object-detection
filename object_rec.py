@@ -25,7 +25,7 @@ tfnet = TFNet(options)
 # In[3]:
 
 
-img = cv2.imread('/Users/syedimad/Desktop/test1.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('/Path/to/image', cv2.IMREAD_COLOR)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # use YOLO to predict the image
