@@ -1,6 +1,7 @@
 # Intro[Custom object detection](Using YOLOv2)
 
 ![testt](https://user-images.githubusercontent.com/33065752/60759390-5bcda400-a042-11e9-9ee7-4bf78c3248b0.jpeg)
+
 To get started with working on OTS-retail project git clone or download the darflow repository first. [darkflow](https://github.com/thtrieu/darkflow.git)
 
 ---
